@@ -9,12 +9,19 @@
 /* Begin PBXBuildFile section */
 		DF6493B3293E0F5E00F8C450 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6493B2293E0F5E00F8C450 /* AppDelegate.swift */; };
 		DF6493B5293E0F5E00F8C450 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6493B4293E0F5E00F8C450 /* SceneDelegate.swift */; };
-		DF6493B7293E0F5E00F8C450 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6493B6293E0F5E00F8C450 /* ViewController.swift */; };
+		DF6493B7293E0F5E00F8C450 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6493B6293E0F5E00F8C450 /* CounterViewController.swift */; };
 		DF6493BC293E0F5F00F8C450 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF6493BB293E0F5F00F8C450 /* Assets.xcassets */; };
 		DF6493BF293E0F5F00F8C450 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF6493BD293E0F5F00F8C450 /* LaunchScreen.storyboard */; };
 		DF6493CA293E0F5F00F8C450 /* Counter_ReactorKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6493C9293E0F5F00F8C450 /* Counter_ReactorKitTests.swift */; };
 		DF6493D4293E0F5F00F8C450 /* Counter_ReactorKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6493D3293E0F5F00F8C450 /* Counter_ReactorKitUITests.swift */; };
 		DF6493D6293E0F5F00F8C450 /* Counter_ReactorKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6493D5293E0F5F00F8C450 /* Counter_ReactorKitUITestsLaunchTests.swift */; };
+		DF6493E4293E2F6B00F8C450 /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = DF6493E3293E2F6B00F8C450 /* ReactorKit */; };
+		DF6493E7293E2FC000F8C450 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = DF6493E6293E2FC000F8C450 /* RxCocoa */; };
+		DF6493E9293E2FC000F8C450 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = DF6493E8293E2FC000F8C450 /* RxRelay */; };
+		DF6493EB293E2FC000F8C450 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DF6493EA293E2FC000F8C450 /* RxSwift */; };
+		DF6493ED293E319B00F8C450 /* CounterViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6493EC293E319B00F8C450 /* CounterViewReactor.swift */; };
+		DF6493F0293EBF2100F8C450 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DF6493EF293EBF2100F8C450 /* SnapKit */; };
+		DF6493F3293EC04A00F8C450 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = DF6493F2293EC04A00F8C450 /* Then */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +45,7 @@
 		DF6493AF293E0F5E00F8C450 /* Counter-ReactorKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Counter-ReactorKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6493B2293E0F5E00F8C450 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF6493B4293E0F5E00F8C450 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DF6493B6293E0F5E00F8C450 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF6493B6293E0F5E00F8C450 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 		DF6493BB293E0F5F00F8C450 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF6493BE293E0F5F00F8C450 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF6493C0293E0F5F00F8C450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +54,7 @@
 		DF6493CF293E0F5F00F8C450 /* Counter-ReactorKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Counter-ReactorKitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF6493D3293E0F5F00F8C450 /* Counter_ReactorKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter_ReactorKitUITests.swift; sourceTree = "<group>"; };
 		DF6493D5293E0F5F00F8C450 /* Counter_ReactorKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter_ReactorKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DF6493EC293E319B00F8C450 /* CounterViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewReactor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF6493E9293E2FC000F8C450 /* RxRelay in Frameworks */,
+				DF6493F3293EC04A00F8C450 /* Then in Frameworks */,
+				DF6493E7293E2FC000F8C450 /* RxCocoa in Frameworks */,
+				DF6493EB293E2FC000F8C450 /* RxSwift in Frameworks */,
+				DF6493E4293E2F6B00F8C450 /* ReactorKit in Frameworks */,
+				DF6493F0293EBF2100F8C450 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,10 +113,11 @@
 			children = (
 				DF6493B2293E0F5E00F8C450 /* AppDelegate.swift */,
 				DF6493B4293E0F5E00F8C450 /* SceneDelegate.swift */,
-				DF6493B6293E0F5E00F8C450 /* ViewController.swift */,
+				DF6493B6293E0F5E00F8C450 /* CounterViewController.swift */,
 				DF6493BB293E0F5F00F8C450 /* Assets.xcassets */,
 				DF6493BD293E0F5F00F8C450 /* LaunchScreen.storyboard */,
 				DF6493C0293E0F5F00F8C450 /* Info.plist */,
+				DF6493EC293E319B00F8C450 /* CounterViewReactor.swift */,
 			);
 			path = "Counter-ReactorKit";
 			sourceTree = "<group>";
@@ -140,6 +155,14 @@
 			dependencies = (
 			);
 			name = "Counter-ReactorKit";
+			packageProductDependencies = (
+				DF6493E3293E2F6B00F8C450 /* ReactorKit */,
+				DF6493E6293E2FC000F8C450 /* RxCocoa */,
+				DF6493E8293E2FC000F8C450 /* RxRelay */,
+				DF6493EA293E2FC000F8C450 /* RxSwift */,
+				DF6493EF293EBF2100F8C450 /* SnapKit */,
+				DF6493F2293EC04A00F8C450 /* Then */,
+			);
 			productName = "Counter-ReactorKit";
 			productReference = DF6493AF293E0F5E00F8C450 /* Counter-ReactorKit.app */;
 			productType = "com.apple.product-type.application";
@@ -212,6 +235,12 @@
 				Base,
 			);
 			mainGroup = DF6493A6293E0F5E00F8C450;
+			packageReferences = (
+				DF6493E2293E2F6B00F8C450 /* XCRemoteSwiftPackageReference "ReactorKit" */,
+				DF6493E5293E2FC000F8C450 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				DF6493EE293EBF2100F8C450 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				DF6493F1293EC04A00F8C450 /* XCRemoteSwiftPackageReference "Then" */,
+			);
 			productRefGroup = DF6493B0293E0F5E00F8C450 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -254,8 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF6493B7293E0F5E00F8C450 /* ViewController.swift in Sources */,
+				DF6493B7293E0F5E00F8C450 /* CounterViewController.swift in Sources */,
 				DF6493B3293E0F5E00F8C450 /* AppDelegate.swift in Sources */,
+				DF6493ED293E319B00F8C450 /* CounterViewReactor.swift in Sources */,
 				DF6493B5293E0F5E00F8C450 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +463,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,6 +492,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -590,6 +622,74 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DF6493E2293E2F6B00F8C450 /* XCRemoteSwiftPackageReference "ReactorKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactorKit/ReactorKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
+		DF6493E5293E2FC000F8C450 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		DF6493EE293EBF2100F8C450 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		DF6493F1293EC04A00F8C450 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DF6493E3293E2F6B00F8C450 /* ReactorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF6493E2293E2F6B00F8C450 /* XCRemoteSwiftPackageReference "ReactorKit" */;
+			productName = ReactorKit;
+		};
+		DF6493E6293E2FC000F8C450 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF6493E5293E2FC000F8C450 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		DF6493E8293E2FC000F8C450 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF6493E5293E2FC000F8C450 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		DF6493EA293E2FC000F8C450 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF6493E5293E2FC000F8C450 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		DF6493EF293EBF2100F8C450 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF6493EE293EBF2100F8C450 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		DF6493F2293EC04A00F8C450 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF6493F1293EC04A00F8C450 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DF6493A7293E0F5E00F8C450 /* Project object */;
 }
