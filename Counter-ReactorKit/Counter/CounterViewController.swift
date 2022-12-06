@@ -49,6 +49,11 @@ class CounterViewController: UIViewController, View {
             .map { CounterViewReactor.Action.increase }
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
+        
+        decreaseButton.rx.tap
+            .map { CounterViewReactor.Action.decrease }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
     }
     
     private func bindState(_ reactor: CounterViewReactor) {

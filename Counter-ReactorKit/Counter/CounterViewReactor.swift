@@ -40,7 +40,7 @@ class CounterViewReactor: Reactor {
         case .decrease:
             return Observable.concat([
                 Observable.just(.setLoading(true)),
-                Observable.just(.increaseValue).delay(.seconds(1), scheduler: MainScheduler.instance),
+                Observable.just(.decreaseValue).delay(.seconds(1), scheduler: MainScheduler.instance),
                 Observable.just(.setLoading(false))
             ])
         }
@@ -50,7 +50,6 @@ class CounterViewReactor: Reactor {
         var newState = state
         switch mutation {
         case .increaseValue:
-//            print(newState.value)
             newState.value += 1
         case .decreaseValue:
             newState.value -= 1

@@ -111,13 +111,12 @@
 		DF6493B1293E0F5E00F8C450 /* Counter-ReactorKit */ = {
 			isa = PBXGroup;
 			children = (
+				DF6493F4293EDCAE00F8C450 /* Counter */,
 				DF6493B2293E0F5E00F8C450 /* AppDelegate.swift */,
 				DF6493B4293E0F5E00F8C450 /* SceneDelegate.swift */,
-				DF6493B6293E0F5E00F8C450 /* CounterViewController.swift */,
 				DF6493BB293E0F5F00F8C450 /* Assets.xcassets */,
 				DF6493BD293E0F5F00F8C450 /* LaunchScreen.storyboard */,
 				DF6493C0293E0F5F00F8C450 /* Info.plist */,
-				DF6493EC293E319B00F8C450 /* CounterViewReactor.swift */,
 			);
 			path = "Counter-ReactorKit";
 			sourceTree = "<group>";
@@ -137,6 +136,15 @@
 				DF6493D5293E0F5F00F8C450 /* Counter_ReactorKitUITestsLaunchTests.swift */,
 			);
 			path = "Counter-ReactorKitUITests";
+			sourceTree = "<group>";
+		};
+		DF6493F4293EDCAE00F8C450 /* Counter */ = {
+			isa = PBXGroup;
+			children = (
+				DF6493B6293E0F5E00F8C450 /* CounterViewController.swift */,
+				DF6493EC293E319B00F8C450 /* CounterViewReactor.swift */,
+			);
+			path = Counter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
