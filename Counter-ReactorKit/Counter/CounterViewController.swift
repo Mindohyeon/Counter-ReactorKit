@@ -39,6 +39,7 @@ class CounterViewController: UIViewController, View {
         setLayout()
     }
     
+    //ReactorKit 내부적으로 호출
     func bind(reactor: CounterViewReactor) {
         bindAction(reactor)
         bindState(reactor)
