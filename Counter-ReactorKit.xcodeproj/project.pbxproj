@@ -22,6 +22,12 @@
 		DF6493ED293E319B00F8C450 /* CounterViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6493EC293E319B00F8C450 /* CounterViewReactor.swift */; };
 		DF6493F0293EBF2100F8C450 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DF6493EF293EBF2100F8C450 /* SnapKit */; };
 		DF6493F3293EC04A00F8C450 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = DF6493F2293EC04A00F8C450 /* Then */; };
+		DFD324052944BB35001ECC4F /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = DFD324042944BB35001ECC4F /* ReactorKit */; };
+		DFD324072944BB35001ECC4F /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = DFD324062944BB35001ECC4F /* RxBlocking */; };
+		DFD324092944BB35001ECC4F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = DFD324082944BB35001ECC4F /* RxCocoa */; };
+		DFD3240B2944BB35001ECC4F /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = DFD3240A2944BB35001ECC4F /* RxRelay */; };
+		DFD3240D2944BB35001ECC4F /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DFD3240C2944BB35001ECC4F /* RxSwift */; };
+		DFD3240F2944BB35001ECC4F /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = DFD3240E2944BB35001ECC4F /* RxTest */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +81,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFD324092944BB35001ECC4F /* RxCocoa in Frameworks */,
+				DFD324052944BB35001ECC4F /* ReactorKit in Frameworks */,
+				DFD3240D2944BB35001ECC4F /* RxSwift in Frameworks */,
+				DFD3240B2944BB35001ECC4F /* RxRelay in Frameworks */,
+				DFD3240F2944BB35001ECC4F /* RxTest in Frameworks */,
+				DFD324072944BB35001ECC4F /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +107,7 @@
 				DF6493C8293E0F5F00F8C450 /* Counter-ReactorKitTests */,
 				DF6493D2293E0F5F00F8C450 /* Counter-ReactorKitUITests */,
 				DF6493B0293E0F5E00F8C450 /* Products */,
+				DFD324032944BB09001ECC4F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +160,13 @@
 			path = Counter;
 			sourceTree = "<group>";
 		};
+		DFD324032944BB09001ECC4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,6 +181,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				DFD323F22944B99C001ECC4F /* PBXTargetDependency */,
+				DFD323F42944B99C001ECC4F /* PBXTargetDependency */,
+				DFD323F62944B99C001ECC4F /* PBXTargetDependency */,
+				DFD323F82944B99C001ECC4F /* PBXTargetDependency */,
+				DFD323FA2944B99C001ECC4F /* PBXTargetDependency */,
+				DFD323FC2944B99C001ECC4F /* PBXTargetDependency */,
 			);
 			name = "Counter-ReactorKit";
 			packageProductDependencies = (
@@ -189,6 +215,14 @@
 				DF6493C7293E0F5F00F8C450 /* PBXTargetDependency */,
 			);
 			name = "Counter-ReactorKitTests";
+			packageProductDependencies = (
+				DFD324042944BB35001ECC4F /* ReactorKit */,
+				DFD324062944BB35001ECC4F /* RxBlocking */,
+				DFD324082944BB35001ECC4F /* RxCocoa */,
+				DFD3240A2944BB35001ECC4F /* RxRelay */,
+				DFD3240C2944BB35001ECC4F /* RxSwift */,
+				DFD3240E2944BB35001ECC4F /* RxTest */,
+			);
 			productName = "Counter-ReactorKitTests";
 			productReference = DF6493C5293E0F5F00F8C450 /* Counter-ReactorKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -327,6 +361,30 @@
 			isa = PBXTargetDependency;
 			target = DF6493AE293E0F5E00F8C450 /* Counter-ReactorKit */;
 			targetProxy = DF6493D0293E0F5F00F8C450 /* PBXContainerItemProxy */;
+		};
+		DFD323F22944B99C001ECC4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = DFD323F12944B99C001ECC4F /* ReactorKit */;
+		};
+		DFD323F42944B99C001ECC4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = DFD323F32944B99C001ECC4F /* RxBlocking */;
+		};
+		DFD323F62944B99C001ECC4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = DFD323F52944B99C001ECC4F /* RxCocoa */;
+		};
+		DFD323F82944B99C001ECC4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = DFD323F72944B99C001ECC4F /* RxRelay */;
+		};
+		DFD323FA2944B99C001ECC4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = DFD323F92944B99C001ECC4F /* RxSwift */;
+		};
+		DFD323FC2944B99C001ECC4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = DFD323FB2944B99C001ECC4F /* RxTest */;
 		};
 /* End PBXTargetDependency section */
 
@@ -542,6 +600,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X52UAWWKMX;
+				ENABLE_TESTABILITY = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MARKETING_VERSION = 1.0;
@@ -696,6 +755,61 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DF6493F1293EC04A00F8C450 /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
+		};
+		DFD323F12944B99C001ECC4F /* ReactorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF6493E2293E2F6B00F8C450 /* XCRemoteSwiftPackageReference "ReactorKit" */;
+			productName = ReactorKit;
+		};
+		DFD323F32944B99C001ECC4F /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RxBlocking;
+		};
+		DFD323F52944B99C001ECC4F /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RxCocoa;
+		};
+		DFD323F72944B99C001ECC4F /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RxRelay;
+		};
+		DFD323F92944B99C001ECC4F /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RxSwift;
+		};
+		DFD323FB2944B99C001ECC4F /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RxTest;
+		};
+		DFD324042944BB35001ECC4F /* ReactorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF6493E2293E2F6B00F8C450 /* XCRemoteSwiftPackageReference "ReactorKit" */;
+			productName = ReactorKit;
+		};
+		DFD324062944BB35001ECC4F /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF6493E5293E2FC000F8C450 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		DFD324082944BB35001ECC4F /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF6493E5293E2FC000F8C450 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		DFD3240A2944BB35001ECC4F /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF6493E5293E2FC000F8C450 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		DFD3240C2944BB35001ECC4F /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF6493E5293E2FC000F8C450 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		DFD3240E2944BB35001ECC4F /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF6493E5293E2FC000F8C450 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

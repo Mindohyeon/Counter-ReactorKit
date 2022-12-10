@@ -20,15 +20,17 @@ class CounterViewController: UIViewController, View {
         $0.text = "0"
     }
     
-    private let increaseButton = UIButton().then {
+    let increaseButton = UIButton().then {
         $0.setTitle("+", for: .normal)
         $0.setTitleColor(.black, for: .normal)
     }
     
-    private let decreaseButton = UIButton().then {
+    let decreaseButton = UIButton().then {
         $0.setTitle("-", for: .normal)
         $0.setTitleColor(.black, for: .normal)
     }
+    
+    lazy var activityIndicatorView = UIActivityIndicatorView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,10 +65,16 @@ class CounterViewController: UIViewController, View {
             .distinctUntilChanged()
             .bind(to: counterLabel.rx.text)
             .disposed(by: disposeBag)
+        
+        reactor.state
+            .map { $0.isLoading }
+            .distinctUntilChanged()
+            .bind(to: activityIndicatorView.rx.isAnimating)
+            .disposed(by: disposeBag)
     }
     
     private func addView() {
-        [counterLabel, decreaseButton, increaseButton].forEach { view.addSubview($0) }
+        [counterLabel, decreaseButton, increaseButton, activityIndicatorView].forEach { view.addSubview($0) }
     }
     
     private func setLayout() {
@@ -82,6 +90,11 @@ class CounterViewController: UIViewController, View {
         increaseButton.snp.makeConstraints {
             $0.leading.equalTo(counterLabel.snp.trailing).offset(40)
             $0.centerY.equalToSuperview()
+        }
+        
+        activityIndicatorView.snp.makeConstraints {
+            $0.top.equalTo(counterLabel.snp.bottom).offset(30)
+            $0.centerX.equalToSuperview()
         }
     }
 }
